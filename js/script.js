@@ -52,6 +52,10 @@ while(bombs.length < 16) {
 
 console.log(bombs);
 
+let counter = 0;
+
+//creare contatore punteggio partita
+
 
 //creo un ciclo per aggiungere i 100 quadrati alla griglia
   for (let i = 0; i < 100; i++) {
@@ -68,9 +72,11 @@ console.log(bombs);
     //creo un if che mi permette di colorare le caselle in modo diverso a seconda se il numero cliccato corrisponde ad una bomba
     if (bombs.includes(i+1)) {
       newSquare.classList.add('color-red');
+      alert("GAME OVER");
       console.log(i+1);
     } else {
       newSquare.classList.toggle('color-blue');
+      
     }
     console.log(i+1);
   });
@@ -80,6 +86,5 @@ console.log(bombs);
   }
 
 
-  
 
 });
