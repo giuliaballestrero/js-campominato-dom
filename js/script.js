@@ -74,13 +74,16 @@ let counter = 0;
     if (bombs.includes(i+1)) {
       newSquare.classList.add('color-red');
       alert("GAME OVER");
+      myGrid.innerHTML = "";
       console.log(i+1);
+
     } else {
       newSquare.classList.toggle('color-blue');
       counter = counter + 1;
       myCounter.innerHTML = "Punteggio: " + counter;
-        if (counter === 4) {
+        if (counter === 84) {
           alert("HAI VINTO");
+          myGrid.innerHTML = "";
         }
 
 
