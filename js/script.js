@@ -65,25 +65,23 @@ let counter = 0;
     //assegno la mia classe css al nuovo div
     newSquare.classList.add('square')
     //creo un p dove inserire i numeri da 1 a 100
-    newSquare.innerHTML = '<span class="m-auto">' + (i + 1) + '</span>'
+    newSquare.innerHTML = '<span class="m-auto"></span>'
 
     //creo un evento on click per cambiare colore ai quadrati
     newSquare.addEventListener("click", function(){
 
     //creo un if che mi permette di colorare le caselle in modo diverso a seconda se il numero cliccato corrisponde ad una bomba
     if (bombs.includes(i+1)) {
-      newSquare.classList.add('color-red');
+      newSquare.classList.add('duck-bomb');
       alert("GAME OVER");
-      myGrid.innerHTML = "";
       console.log(i+1);
 
     } else {
-      newSquare.classList.toggle('color-blue');
+      newSquare.classList.toggle('duck');
       counter = counter + 1;
       myCounter.innerHTML = "Punteggio: " + counter;
         if (counter === 84) {
           alert("HAI VINTO");
-          myGrid.innerHTML = "";
         }
 
 

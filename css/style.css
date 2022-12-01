@@ -15,10 +15,14 @@ border: 1px solid black;
 display: flex;
 }
 
-.color-blue {
-    background-color: #0d6efd;
+.duck {
+   background-image: url(https://styles.redditmedia.com/t5_11l3q8/styles/communityIcon_lnq7doewduk31.png?width=256&s=5038796a151ac14cd3c01694132c83912cdcd065);
+   background-position: center;
+   background-size: cover;
 }
 
-.color-red {
-    background-color: red;
+.duck-bomb {
+    background-image: url(https://i.pinimg.com/originals/1b/bd/6f/1bbd6f104e72df45e438f45bfeb04c66.png);
+    background-position: center;
+    background-size: cover;
 }
