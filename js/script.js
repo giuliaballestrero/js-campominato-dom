@@ -52,6 +52,7 @@ while(bombs.length < 16) {
 
 console.log(bombs);
 
+let myCounter = document.getElementById("my-counter");
 let counter = 0;
 
 //creare contatore punteggio partita
@@ -76,7 +77,13 @@ let counter = 0;
       console.log(i+1);
     } else {
       newSquare.classList.toggle('color-blue');
-      
+      counter = counter + 1;
+      myCounter.innerHTML = "Punteggio: " + counter;
+        if (counter === 4) {
+          alert("HAI VINTO");
+        }
+
+
     }
     console.log(i+1);
   });
