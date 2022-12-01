@@ -66,9 +66,14 @@ console.log(bombs);
     newSquare.addEventListener("click", function(){
 
     //creo un if che mi permette di colorare le caselle in modo diverso a seconda se il numero cliccato corrisponde ad una bomba
-    newSquare.classList.toggle('color-blue');
+    if (bombs.includes(i+1)) {
+      newSquare.classList.add('color-red');
+      console.log(i+1);
+    } else {
+      newSquare.classList.toggle('color-blue');
+    }
     console.log(i+1);
-    });
+  });
     
     //aggiungo il nuovo div alla griglia
     myGrid.appendChild(newSquare);
