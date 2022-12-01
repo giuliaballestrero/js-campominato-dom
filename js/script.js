@@ -74,10 +74,11 @@ let counter = 0;
     if (bombs.includes(i+1)) {
       newSquare.classList.add('duck-bomb');
       alert("GAME OVER");
+      myCounter.innerHTML = "Punteggio: 0"
       console.log(i+1);
 
     } else {
-      newSquare.classList.toggle('duck');
+      newSquare.classList.add('duck');
       counter = counter + 1;
       myCounter.innerHTML = "Punteggio: " + counter;
         if (counter === 84) {
